@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginPage_Test(failed)">
+    <classes>
+      <class name="pearl.SmartER.TestCases.LoginPage_TestCases">
+        <methods>
+          <include name="tc02_invalid_login"/>
+          <include name="tearDown"/>
+          <include name="tc05_verify_superUser_Login"/>
+          <include name="initialise_Driver"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="webdriver_initialise"/>
+          <include name="webdriver_close"/>
+        </methods>
+      </class> <!-- pearl.SmartER.TestCases.LoginPage_TestCases -->
+      <class name="pearl.SmartER.TestCases.LocationPage_TestCases">
+        <methods>
+          <include name="tc26_verify_create_location_without_valid_email"/>
+          <include name="initialise_Driver"/>
+          <include name="tc40_verify_delete_functionality"/>
+          <include name="tc37_verify_create_location_with_already_existing_name"/>
+          <include name="tc36_verify_create_location_without_timeZone_dropdown"/>
+          <include name="tc32_verify_create_location_without_contactAddress_field"/>
+          <include name="tc20_verify_user_can_edit_contact_person_name"/>
+          <include name="tc19_verify_user_can_edit_location_name"/>
+          <include name="tc31_verify_create_location_without_subunit_field"/>
+          <include name="tc25_verify_create_location_without_name"/>
+          <include name="tc09_validating_phone_number_field"/>
+          <include name="tc30_verify_create_location_without_website_field"/>
+          <include name="tc33_verify_create_location_without_country_dropdown"/>
+          <include name="tc35_verify_create_location_without_preferedDateFormat_dropdown"/>
+          <include name="tc21_verify_user_can_edit_phoneNumber"/>
+          <include name="tc27_verify_create_location_without_contactPerson_field"/>
+          <include name="webdriver_initialise"/>
+          <include name="tc08_verify_user_can_upload_logo"/>
+          <include name="browserr_close"/>
+          <include name="tearDown"/>
+          <include name="tc28_verify_create_location_without_phoneNumber_field"/>
+          <include name="beforetest"/>
+          <include name="tc29_verify_create_location_without_city_field"/>
+          <include name="aftertest"/>
+          <include name="tc22_verify_user_can_edit_email"/>
+          <include name="tc03_verify_create_location_with_valid_details"/>
+          <include name="tc34_verify_create_location_without_state_dropdown"/>
+        </methods>
+      </class> <!-- pearl.SmartER.TestCases.LocationPage_TestCases -->
+    </classes>
+  </test> <!-- LoginPage_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

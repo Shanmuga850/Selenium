@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="pearl.SmartER.TestCases.SurveyPage_TestCases">
+        <methods>
+          <include name="tc61_verifyUserIsAbleToSendASurveyToAValidEmailandInvalidPhoneNumber"/>
+          <include name="tc57_verifyUserIsAbleToSendASurveyToEmail"/>
+          <include name="tc60_verifyUserIsAbleToSendASurveyWithInvalidEmailAndValidPhoneNumber"/>
+          <include name="tc14_verifyUserIsNotAllowToGoSurveyDefinitionFormWithoutFillingAnyDataInSurveyForm"/>
+          <include name="initialise_Driver"/>
+          <include name="tc42_verifyUserIsAbleToViewAQuestionByTypeOrder"/>
+          <include name="tc53_verifyUserIsAbleToViewASurveyByVersionCreateDateOrder"/>
+          <include name="tc52_verifyWhetherUserIsAbleToViewASurveyByVersion"/>
+          <include name="t18_verifyUserIsNotAllowToGoAlertDefinitionFormWithoutFillingAnyDataInResponseDefinitionForm"/>
+          <include name="t17_verifyUserIsAllowToGoResponseDefinitionFormIntoAlertDefinitionForm"/>
+          <include name="tc58_verifyUserIsAbleToSendASurveyToPhoneNumber"/>
+          <include name="tc51_verifyUserIsAbleToViewASurveyBySurveyName"/>
+          <include name="tc05_verifyUserIsNotAbleToCreateANewQuestionWithoutFillingAnyData"/>
+          <include name="tc38_verifyUserIsAbleToDeleteAQuestion"/>
+          <include name="tc27_verifyUserIsAbleToDeleteASurvey"/>
+          <include name="tc06_verifyUserIsAbleToRetrunTheQuestionBank"/>
+          <include name="tc35_verifyUserIsAbleToSearchAQuestionWithLanguage"/>
+          <include name="webDriverClose"/>
+          <include name="tc59_verifyUserIsAbleToSendASurveyWithoutFillingAMandatoryFields"/>
+          <include name="tc40_verifyUserIsAbleToViewAQuestionByCategoryOrder"/>
+          <include name="tc28_verifyUserIsAbleToEnterASettingInTheSurvey"/>
+          <include name="tc55_verifyUserIsAbleToEnterASendSurvey"/>
+          <include name="tc25_verifyUserIsAbleToSearchASurveyWithLocationDepartmentAndSurveyType"/>
+          <include name="tc20_verifyUserIsAbleToRetrunTheQuestionBank"/>
+          <include name="tc15_verifyUserIsAllowToGoSurveyDefinitionFormIntoResponseDefinitionForm"/>
+          <include name="tc49_verifyUserIsAbleToSearchASurveyWithSectionInTheResults"/>
+          <include name="tc36_verifyUserIsAbleToSearchAQuestionWithGroupsAndCategoryAndLanguage"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="tc19_verifyUserIsNotAllowToCreateANewSurveyWithoutFillingAnyDataIntoTheAlertDefinitionForm"/>
+          <include name="tc01_verifySuveyButtonIsVisible"/>
+          <include name="tc46_verifyUserIsAbleToSearchASurveyWithDepartmentInTheResults"/>
+          <include name="tc08_verifyUserIsAbleToDeleteAQuestionInTheQuestionBank"/>
+          <include name="tc62_verifyUserIsAbleToCreateANewQuestionAndAddIntoTheWareHouse"/>
+          <include name="tc04_verifyUserIsAbleToCreateANewQuestion"/>
+          <include name="tc07_verifyUserIsAbleToSearchAQuestionWithQuestionName"/>
+          <include name="tc47_verifyUserIsAbleToSearchASurveyWithMonthInTheResults"/>
+          <include name="tc22_verifyUserIsAbleToSearchASurveyWithLocation"/>
+          <include name="tc24_verifyUserIsAbleToSearchASurveyWithSurveyType"/>
+          <include name="tc43_verifyUserIsAbleToViewAQuestionByLanguageOrder"/>
+          <include name="tc31_verifyUserIsAllowToEnterAWarehouse"/>
+          <include name="tc37_verifyUserIsAbleToEditQuestion"/>
+          <include name="initialize"/>
+          <include name="tc45_verifyUserIsAbleToSearchASurveyWithLocationInTheResults"/>
+          <include name="tc16_verifyUserIsNotAllowToGoResponseDefinitionFormWithoutFillingAnyDataInSurveyDefinitionForm"/>
+          <include name="tc29_verifyUserIsAbleToEditSettingInTheSurvey"/>
+          <include name="tc54_verifyUserIsAbleToViewASurveyByStatus"/>
+          <include name="tc44_verifyUserIsAbleToEnterAResults"/>
+          <include name="tc09_verifyUserIsAbleToEnterCurrentSurveys"/>
+          <include name="tc48_verifyUserIsAbleToSearchASurveyWithYearInTheResults"/>
+          <include name="tc02_verifyUserIsAbleToEnterQuestionBank"/>
+          <include name="tc13_verifyUserIsAllowToMoveSurveyIntoASurveyDefinition"/>
+          <include name="tc11_verifyUserIsAllowToCreateANewSurvey"/>
+          <include name="tc33_verifyUserIsAbleToSearchAQuestionWithGroups"/>
+          <include name="tc32_verifyUserIsAbleToSearchAQuestionInWarehouse"/>
+          <include name="tc56_verifyUserIsAbleToSendASurvey"/>
+          <include name="tc21_verifyUserIsAbleToSearchASurvey"/>
+          <include name="tc23_verifyUserIsAbleToSearchASurveyWithDepartment"/>
+          <include name="tc26_verifyUserIsAbleToEditASurvey"/>
+          <include name="tc10_verifyUserIsAbleToViewCreateSurvey"/>
+          <include name="tc30_verifyUserIsAbleToReturnASurveyPage"/>
+          <include name="tc39_verifyUserIsAbleToViewAQuestionByGroupOrder"/>
+          <include name="tc03_verifyUserIsAbleToEnterWarehouse"/>
+          <include name="tc34_verifyUserIsAbleToSearchAQuestionWithCategory"/>
+          <include name="tearDown"/>
+          <include name="tc50_verifyUserIsAbleToSearchASurveyWithLocationDepartmentMonthYearAndSectionInTheResults"/>
+          <include name="tc41_verifyUserIsAbleToViewAQuestionByQuestionOrder"/>
+          <include name="tc12_verifyUserIsAllowToCreateANewSurveyWithExistingData"/>
+        </methods>
+      </class> <!-- pearl.SmartER.TestCases.SurveyPage_TestCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

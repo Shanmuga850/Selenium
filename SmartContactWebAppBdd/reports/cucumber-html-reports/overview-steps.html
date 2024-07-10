@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+          <li role="presentation"><a href="../">Jenkins</a></li>
+          <li role="presentation"><a href="../../lastCompletedBuild/cucumber-html-reports/overview-steps.html">Latest results</a></li>
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SmartContact</td>
+        <td>1</td>
+      <td>13 Apr 2023, 11:22</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.Go_To_Specified_URL_of_the_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="17268832700">17.268</td>
+              <td class="duration" data-value="17268832700">17.268</td>
+              <td class="duration" data-value="17268832700">17.268</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.Go_to_Specified_url_of_the_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="37497911700">37.497</td>
+              <td class="duration" data-value="37497911700">37.497</td>
+              <td class="duration" data-value="37497911700">37.497</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.Go_to_Speficified_URL_of_the_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="15297564000">15.297</td>
+              <td class="duration" data-value="15297564000">15.297</td>
+              <td class="duration" data-value="15297564000">15.297</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.User_Enter_Into_The_Homepage_of_the_Application()</td>
+              <td>1</td>
+              <td class="duration" data-value="16000466600">16.000</td>
+              <td class="duration" data-value="16000466600">16.000</td>
+              <td class="duration" data-value="16000466600">16.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.User_Enter_Into_the_Homepage_of_the_Application()</td>
+              <td>1</td>
+              <td class="duration" data-value="16052061600">16.052</td>
+              <td class="duration" data-value="16052061600">16.052</td>
+              <td class="duration" data-value="16052061600">16.052</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.User_Enter_into_the_Homepage_of_the_Application()</td>
+              <td>1</td>
+              <td class="duration" data-value="17540441300">17.540</td>
+              <td class="duration" data-value="17540441300">17.540</td>
+              <td class="duration" data-value="17540441300">17.540</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_in_to_the_homepage_of_the_application8()</td>
+              <td>1</td>
+              <td class="duration" data-value="15572307500">15.572</td>
+              <td class="duration" data-value="15572307500">15.572</td>
+              <td class="duration" data-value="15572307500">15.572</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_home_page_of_the_application9()</td>
+              <td>1</td>
+              <td class="duration" data-value="15755207700">15.755</td>
+              <td class="duration" data-value="15755207700">15.755</td>
+              <td class="duration" data-value="15755207700">15.755</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_applciaton24()</td>
+              <td>1</td>
+              <td class="duration" data-value="15911794700">15.911</td>
+              <td class="duration" data-value="15911794700">15.911</td>
+              <td class="duration" data-value="15911794700">15.911</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="16613969700">16.613</td>
+              <td class="duration" data-value="16613969700">16.613</td>
+              <td class="duration" data-value="16613969700">16.613</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application10()</td>
+              <td>1</td>
+              <td class="duration" data-value="15643812200">15.643</td>
+              <td class="duration" data-value="15643812200">15.643</td>
+              <td class="duration" data-value="15643812200">15.643</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application11()</td>
+              <td>1</td>
+              <td class="duration" data-value="15653260100">15.653</td>
+              <td class="duration" data-value="15653260100">15.653</td>
+              <td class="duration" data-value="15653260100">15.653</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application12()</td>
+              <td>1</td>
+              <td class="duration" data-value="15519225200">15.519</td>
+              <td class="duration" data-value="15519225200">15.519</td>
+              <td class="duration" data-value="15519225200">15.519</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application13()</td>
+              <td>1</td>
+              <td class="duration" data-value="15657033300">15.657</td>
+              <td class="duration" data-value="15657033300">15.657</td>
+              <td class="duration" data-value="15657033300">15.657</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application14()</td>
+              <td>1</td>
+              <td class="duration" data-value="15781075500">15.781</td>
+              <td class="duration" data-value="15781075500">15.781</td>
+              <td class="duration" data-value="15781075500">15.781</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application15()</td>
+              <td>1</td>
+              <td class="duration" data-value="16299438800">16.299</td>
+              <td class="duration" data-value="16299438800">16.299</td>
+              <td class="duration" data-value="16299438800">16.299</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application16()</td>
+              <td>1</td>
+              <td class="duration" data-value="16602665700">16.602</td>
+              <td class="duration" data-value="16602665700">16.602</td>
+              <td class="duration" data-value="16602665700">16.602</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application17()</td>
+              <td>1</td>
+              <td class="duration" data-value="15630632300">15.630</td>
+              <td class="duration" data-value="15630632300">15.630</td>
+              <td class="duration" data-value="15630632300">15.630</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application19()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application20()</td>
+              <td>1</td>
+              <td class="duration" data-value="15708322900">15.708</td>
+              <td class="duration" data-value="15708322900">15.708</td>
+              <td class="duration" data-value="15708322900">15.708</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application21()</td>
+              <td>1</td>
+              <td class="duration" data-value="15879964100">15.879</td>
+              <td class="duration" data-value="15879964100">15.879</td>
+              <td class="duration" data-value="15879964100">15.879</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application22()</td>
+              <td>1</td>
+              <td class="duration" data-value="15997620100">15.997</td>
+              <td class="duration" data-value="15997620100">15.997</td>
+              <td class="duration" data-value="15997620100">15.997</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application25()</td>
+              <td>1</td>
+              <td class="duration" data-value="15872668600">15.872</td>
+              <td class="duration" data-value="15872668600">15.872</td>
+              <td class="duration" data-value="15872668600">15.872</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application26()</td>
+              <td>1</td>
+              <td class="duration" data-value="15869857600">15.869</td>
+              <td class="duration" data-value="15869857600">15.869</td>
+              <td class="duration" data-value="15869857600">15.869</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application27()</td>
+              <td>1</td>
+              <td class="duration" data-value="15845340700">15.845</td>
+              <td class="duration" data-value="15845340700">15.845</td>
+              <td class="duration" data-value="15845340700">15.845</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application28()</td>
+              <td>1</td>
+              <td class="duration" data-value="15711787900">15.711</td>
+              <td class="duration" data-value="15711787900">15.711</td>
+              <td class="duration" data-value="15711787900">15.711</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application29()</td>
+              <td>1</td>
+              <td class="duration" data-value="15747059600">15.747</td>
+              <td class="duration" data-value="15747059600">15.747</td>
+              <td class="duration" data-value="15747059600">15.747</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application30()</td>
+              <td>1</td>
+              <td class="duration" data-value="15730231900">15.730</td>
+              <td class="duration" data-value="15730231900">15.730</td>
+              <td class="duration" data-value="15730231900">15.730</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application5()</td>
+              <td>1</td>
+              <td class="duration" data-value="17174644500">17.174</td>
+              <td class="duration" data-value="17174644500">17.174</td>
+              <td class="duration" data-value="17174644500">17.174</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application6()</td>
+              <td>1</td>
+              <td class="duration" data-value="15590177300">15.590</td>
+              <td class="duration" data-value="15590177300">15.590</td>
+              <td class="duration" data-value="15590177300">15.590</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_application7()</td>
+              <td>1</td>
+              <td class="duration" data-value="16104421500">16.104</td>
+              <td class="duration" data-value="16104421500">16.104</td>
+              <td class="duration" data-value="16104421500">16.104</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_applicaton18()</td>
+              <td>1</td>
+              <td class="duration" data-value="15669030700">15.669</td>
+              <td class="duration" data-value="15669030700">15.669</td>
+              <td class="duration" data-value="15669030700">15.669</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_enter_into_the_homepage_of_the_applicaton23()</td>
+              <td>1</td>
+              <td class="duration" data-value="15946392700">15.946</td>
+              <td class="duration" data-value="15946392700">15.946</td>
+              <td class="duration" data-value="15946392700">15.946</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page10()</td>
+              <td>1</td>
+              <td class="duration" data-value="12577488600">12.577</td>
+              <td class="duration" data-value="12577488600">12.577</td>
+              <td class="duration" data-value="12577488600">12.577</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page11()</td>
+              <td>1</td>
+              <td class="duration" data-value="8536491000">8.536</td>
+              <td class="duration" data-value="8536491000">8.536</td>
+              <td class="duration" data-value="8536491000">8.536</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page12()</td>
+              <td>1</td>
+              <td class="duration" data-value="10270372200">10.270</td>
+              <td class="duration" data-value="10270372200">10.270</td>
+              <td class="duration" data-value="10270372200">10.270</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page13()</td>
+              <td>1</td>
+              <td class="duration" data-value="13112051100">13.112</td>
+              <td class="duration" data-value="13112051100">13.112</td>
+              <td class="duration" data-value="13112051100">13.112</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page14()</td>
+              <td>1</td>
+              <td class="duration" data-value="8465378700">8.465</td>
+              <td class="duration" data-value="8465378700">8.465</td>
+              <td class="duration" data-value="8465378700">8.465</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page15()</td>
+              <td>1</td>
+              <td class="duration" data-value="9368950800">9.368</td>
+              <td class="duration" data-value="9368950800">9.368</td>
+              <td class="duration" data-value="9368950800">9.368</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page16()</td>
+              <td>1</td>
+              <td class="duration" data-value="19373257700">19.373</td>
+              <td class="duration" data-value="19373257700">19.373</td>
+              <td class="duration" data-value="19373257700">19.373</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page17()</td>
+              <td>1</td>
+              <td class="duration" data-value="8990255500">8.990</td>
+              <td class="duration" data-value="8990255500">8.990</td>
+              <td class="duration" data-value="8990255500">8.990</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page18()</td>
+              <td>1</td>
+              <td class="duration" data-value="7990252300">7.990</td>
+              <td class="duration" data-value="7990252300">7.990</td>
+              <td class="duration" data-value="7990252300">7.990</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page19()</td>
+              <td>1</td>
+              <td class="duration" data-value="1266996452700">21:6.996</td>
+              <td class="duration" data-value="1266996452700">21:6.996</td>
+              <td class="duration" data-value="1266996452700">21:6.996</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page20()</td>
+              <td>1</td>
+              <td class="duration" data-value="21376363200">21.376</td>
+              <td class="duration" data-value="21376363200">21.376</td>
+              <td class="duration" data-value="21376363200">21.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page21()</td>
+              <td>1</td>
+              <td class="duration" data-value="11360194200">11.360</td>
+              <td class="duration" data-value="11360194200">11.360</td>
+              <td class="duration" data-value="11360194200">11.360</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page22()</td>
+              <td>1</td>
+              <td class="duration" data-value="9900429300">9.900</td>
+              <td class="duration" data-value="9900429300">9.900</td>
+              <td class="duration" data-value="9900429300">9.900</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page23()</td>
+              <td>1</td>
+              <td class="duration" data-value="9403480700">9.403</td>
+              <td class="duration" data-value="9403480700">9.403</td>
+              <td class="duration" data-value="9403480700">9.403</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page24()</td>
+              <td>1</td>
+              <td class="duration" data-value="10487702600">10.487</td>
+              <td class="duration" data-value="10487702600">10.487</td>
+              <td class="duration" data-value="10487702600">10.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page25()</td>
+              <td>1</td>
+              <td class="duration" data-value="9306994900">9.306</td>
+              <td class="duration" data-value="9306994900">9.306</td>
+              <td class="duration" data-value="9306994900">9.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page27()</td>
+              <td>1</td>
+              <td class="duration" data-value="122221016600">2:2.221</td>
+              <td class="duration" data-value="122221016600">2:2.221</td>
+              <td class="duration" data-value="122221016600">2:2.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page28()</td>
+              <td>1</td>
+              <td class="duration" data-value="13425689500">13.425</td>
+              <td class="duration" data-value="13425689500">13.425</td>
+              <td class="duration" data-value="13425689500">13.425</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page29()</td>
+              <td>1</td>
+              <td class="duration" data-value="23533332200">23.533</td>
+              <td class="duration" data-value="23533332200">23.533</td>
+              <td class="duration" data-value="23533332200">23.533</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page30()</td>
+              <td>1</td>
+              <td class="duration" data-value="63195782600">1:3.195</td>
+              <td class="duration" data-value="63195782600">1:3.195</td>
+              <td class="duration" data-value="63195782600">1:3.195</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page4()</td>
+              <td>1</td>
+              <td class="duration" data-value="16614535200">16.614</td>
+              <td class="duration" data-value="16614535200">16.614</td>
+              <td class="duration" data-value="16614535200">16.614</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page5()</td>
+              <td>1</td>
+              <td class="duration" data-value="9770305600">9.770</td>
+              <td class="duration" data-value="9770305600">9.770</td>
+              <td class="duration" data-value="9770305600">9.770</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page6()</td>
+              <td>1</td>
+              <td class="duration" data-value="9093783200">9.093</td>
+              <td class="duration" data-value="9093783200">9.093</td>
+              <td class="duration" data-value="9093783200">9.093</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page7()</td>
+              <td>1</td>
+              <td class="duration" data-value="8636633600">8.636</td>
+              <td class="duration" data-value="8636633600">8.636</td>
+              <td class="duration" data-value="8636633600">8.636</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page8()</td>
+              <td>1</td>
+              <td class="duration" data-value="9206916800">9.206</td>
+              <td class="duration" data-value="9206916800">9.206</td>
+              <td class="duration" data-value="9206916800">9.206</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_page9()</td>
+              <td>1</td>
+              <td class="duration" data-value="11680665600">11.680</td>
+              <td class="duration" data-value="11680665600">11.680</td>
+              <td class="duration" data-value="11680665600">11.680</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.user_navigates_to_smart_er_login_pager26()</td>
+              <td>1</td>
+              <td class="duration" data-value="9718533800">9.718</td>
+              <td class="duration" data-value="9718533800">9.718</td>
+              <td class="duration" data-value="9718533800">9.718</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_user_can_return_from_create_a_new_question_page_into_question_bank_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="35690590100">35.690</td>
+              <td class="duration" data-value="35690590100">35.690</td>
+              <td class="duration" data-value="35690590100">35.690</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_user_is_able_to_enter_add_from_warehouse()</td>
+              <td>1</td>
+              <td class="duration" data-value="11014677000">11.014</td>
+              <td class="duration" data-value="11014677000">11.014</td>
+              <td class="duration" data-value="11014677000">11.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_user_is_able_to_enter_question_bank()</td>
+              <td>1</td>
+              <td class="duration" data-value="13648912800">13.648</td>
+              <td class="duration" data-value="13648912800">13.648</td>
+              <td class="duration" data-value="13648912800">13.648</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_user_is_able_to_view_survey_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="949135300">0.949</td>
+              <td class="duration" data-value="949135300">0.949</td>
+              <td class="duration" data-value="949135300">0.949</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_validation_messages_are_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="29355894800">29.355</td>
+              <td class="duration" data-value="29355894800">29.355</td>
+              <td class="duration" data-value="29355894800">29.355</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_the_can_delete_the_question_in_the_question_bank()</td>
+              <td>1</td>
+              <td class="duration" data-value="34471100900">34.471</td>
+              <td class="duration" data-value="34471100900">34.471</td>
+              <td class="duration" data-value="34471100900">34.471</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_the_user_can_search_a_question_in_the_search_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="17887476200">17.887</td>
+              <td class="duration" data-value="17887476200">17.887</td>
+              <td class="duration" data-value="17887476200">17.887</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_can_create_a_new_question()</td>
+              <td>1</td>
+              <td class="duration" data-value="51001075900">51.001</td>
+              <td class="duration" data-value="51001075900">51.001</td>
+              <td class="duration" data-value="51001075900">51.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_create_a_new_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="44890049100">44.890</td>
+              <td class="duration" data-value="44890049100">44.890</td>
+              <td class="duration" data-value="44890049100">44.890</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_create_a_new_survey_without_entering_any_data_into_the_alert_definition_form()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_delete_a_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="41301553200">41.301</td>
+              <td class="duration" data-value="41301553200">41.301</td>
+              <td class="duration" data-value="41301553200">41.301</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_edit_a_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="57452108700">57.452</td>
+              <td class="duration" data-value="57452108700">57.452</td>
+              <td class="duration" data-value="57452108700">57.452</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_edit_setting_in_the_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="70704452400">1:10.704</td>
+              <td class="duration" data-value="70704452400">1:10.704</td>
+              <td class="duration" data-value="70704452400">1:10.704</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_enter_a_setting_in_the_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="44173131500">44.173</td>
+              <td class="duration" data-value="44173131500">44.173</td>
+              <td class="duration" data-value="44173131500">44.173</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_enter_the_current_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="10657624100">10.657</td>
+              <td class="duration" data-value="10657624100">10.657</td>
+              <td class="duration" data-value="10657624100">10.657</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_go_to_the_alert_definition_form_after_filling_all_mandatory_fileds_in_the_response_definition_form_in_the_create_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="95910191800">1:35.910</td>
+              <td class="duration" data-value="95910191800">1:35.910</td>
+              <td class="duration" data-value="95910191800">1:35.910</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_go_to_the_response_definition_form_after_filling_all_mandatory_fileds_in_the_survey_definition_form_in_the_create_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="45285446300">45.285</td>
+              <td class="duration" data-value="45285446300">45.285</td>
+              <td class="duration" data-value="45285446300">45.285</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_go_to_the_survey_definition_form_after_filling_all_mandatory_fileds_in_the_survey_form_in_the_create_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="41533540200">41.533</td>
+              <td class="duration" data-value="41533540200">41.533</td>
+              <td class="duration" data-value="41533540200">41.533</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_return_a_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="43607568800">43.607</td>
+              <td class="duration" data-value="43607568800">43.607</td>
+              <td class="duration" data-value="43607568800">43.607</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_return_the_creating_a_new_survey_page_into_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="98786496500">1:38.786</td>
+              <td class="duration" data-value="98786496500">1:38.786</td>
+              <td class="duration" data-value="98786496500">1:38.786</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_search_a_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="17587364500">17.587</td>
+              <td class="duration" data-value="17587364500">17.587</td>
+              <td class="duration" data-value="17587364500">17.587</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_search_a_survey_with_department()</td>
+              <td>1</td>
+              <td class="duration" data-value="20238537100">20.238</td>
+              <td class="duration" data-value="20238537100">20.238</td>
+              <td class="duration" data-value="20238537100">20.238</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_search_a_survey_with_location()</td>
+              <td>1</td>
+              <td class="duration" data-value="22459079000">22.459</td>
+              <td class="duration" data-value="22459079000">22.459</td>
+              <td class="duration" data-value="22459079000">22.459</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_search_a_survey_with_location_department_and_survey_type()</td>
+              <td>1</td>
+              <td class="duration" data-value="35467618700">35.467</td>
+              <td class="duration" data-value="35467618700">35.467</td>
+              <td class="duration" data-value="35467618700">35.467</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_search_a_survey_with_survey_type()</td>
+              <td>1</td>
+              <td class="duration" data-value="16437942800">16.437</td>
+              <td class="duration" data-value="16437942800">16.437</td>
+              <td class="duration" data-value="16437942800">16.437</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_able_to_view_create_survey()</td>
+              <td>1</td>
+              <td class="duration" data-value="10852208700">10.852</td>
+              <td class="duration" data-value="10852208700">10.852</td>
+              <td class="duration" data-value="10852208700">10.852</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_allow_to_create_a_new_survey_with_already_exiting_data()</td>
+              <td>1</td>
+              <td class="duration" data-value="132702950100">2:12.702</td>
+              <td class="duration" data-value="132702950100">2:12.702</td>
+              <td class="duration" data-value="132702950100">2:12.702</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_allow_to_go_to_the_alert_definition_form_without_entering_any_data_into_the_mandatory_fields_in_the_response_definition_form_in_the_create_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="39117126600">39.117</td>
+              <td class="duration" data-value="39117126600">39.117</td>
+              <td class="duration" data-value="39117126600">39.117</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whether_user_is_allow_to_go_to_the_response_definition_form_without_entering_any_data_into_the_mandatory_fields_in_the_survey_definition_form_in_the_create_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="44865546800">44.865</td>
+              <td class="duration" data-value="44865546800">44.865</td>
+              <td class="duration" data-value="44865546800">44.865</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.SurveyStepDefinition.verify_whtether_user_is_allow_to_go_survey_into_a_survey_definition_form_without_entering_any_data_into_a_survey_form_in_the_create_survey_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="31156862700">31.156</td>
+              <td class="duration" data-value="31156862700">31.156</td>
+              <td class="duration" data-value="31156862700">31.156</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.go_to_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="26929152600">26.929</td>
+              <td class="duration" data-value="26929152600">26.929</td>
+              <td class="duration" data-value="26929152600">26.929</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.go_to_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="24411982300">24.411</td>
+              <td class="duration" data-value="24411982300">24.411</td>
+              <td class="duration" data-value="24411982300">24.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.go_to_the_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="25101271100">25.101</td>
+              <td class="duration" data-value="25101271100">25.101</td>
+              <td class="duration" data-value="25101271100">25.101</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.invoke_the_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9363973300">9.363</td>
+              <td class="duration" data-value="9363973300">9.363</td>
+              <td class="duration" data-value="9363973300">9.363</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.invoke_the_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8430106100">8.430</td>
+              <td class="duration" data-value="8430106100">8.430</td>
+              <td class="duration" data-value="8430106100">8.430</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.invoke_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8064311500">8.064</td>
+              <td class="duration" data-value="8064311500">8.064</td>
+              <td class="duration" data-value="8064311500">8.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.invoking_Browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9713367400">9.713</td>
+              <td class="duration" data-value="9713367400">9.713</td>
+              <td class="duration" data-value="9713367400">9.713</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.invoking_The_Browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9330718800">9.330</td>
+              <td class="duration" data-value="9330718800">9.330</td>
+              <td class="duration" data-value="9330718800">9.330</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.invoking_Webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="12422002800">12.422</td>
+              <td class="duration" data-value="12422002800">12.422</td>
+              <td class="duration" data-value="12422002800">12.422</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.load_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9164556900">9.164</td>
+              <td class="duration" data-value="9164556900">9.164</td>
+              <td class="duration" data-value="9164556900">9.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.load_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8458531700">8.458</td>
+              <td class="duration" data-value="8458531700">8.458</td>
+              <td class="duration" data-value="8458531700">8.458</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.load_the_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14337289200">14.337</td>
+              <td class="duration" data-value="14337289200">14.337</td>
+              <td class="duration" data-value="14337289200">14.337</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.load_the_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="12836379200">12.836</td>
+              <td class="duration" data-value="12836379200">12.836</td>
+              <td class="duration" data-value="12836379200">12.836</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.load_the_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9792480000">9.792</td>
+              <td class="duration" data-value="9792480000">9.792</td>
+              <td class="duration" data-value="9792480000">9.792</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.load_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="10575450200">10.575</td>
+              <td class="duration" data-value="10575450200">10.575</td>
+              <td class="duration" data-value="10575450200">10.575</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.loads_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8910095100">8.910</td>
+              <td class="duration" data-value="8910095100">8.910</td>
+              <td class="duration" data-value="8910095100">8.910</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.loads_the_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9790145300">9.790</td>
+              <td class="duration" data-value="9790145300">9.790</td>
+              <td class="duration" data-value="9790145300">9.790</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.loads_the_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="11440023300">11.440</td>
+              <td class="duration" data-value="11440023300">11.440</td>
+              <td class="duration" data-value="11440023300">11.440</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.loads_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9954827400">9.954</td>
+              <td class="duration" data-value="9954827400">9.954</td>
+              <td class="duration" data-value="9954827400">9.954</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigate_To_Home_Page()</td>
+              <td>1</td>
+              <td class="duration" data-value="26885389700">26.885</td>
+              <td class="duration" data-value="26885389700">26.885</td>
+              <td class="duration" data-value="26885389700">26.885</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigate_To_Homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="27819486800">27.819</td>
+              <td class="duration" data-value="27819486800">27.819</td>
+              <td class="duration" data-value="27819486800">27.819</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigate_To_The_Home_Page()</td>
+              <td>1</td>
+              <td class="duration" data-value="26376352200">26.376</td>
+              <td class="duration" data-value="26376352200">26.376</td>
+              <td class="duration" data-value="26376352200">26.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigate_to_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14397299200">14.397</td>
+              <td class="duration" data-value="14397299200">14.397</td>
+              <td class="duration" data-value="14397299200">14.397</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigate_to_the_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="15083187400">15.083</td>
+              <td class="duration" data-value="15083187400">15.083</td>
+              <td class="duration" data-value="15083187400">15.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigate_to_the_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="14371177200">14.371</td>
+              <td class="duration" data-value="14371177200">14.371</td>
+              <td class="duration" data-value="14371177200">14.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_edit_user_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="15026856800">15.026</td>
+              <td class="duration" data-value="15026856800">15.026</td>
+              <td class="duration" data-value="15026856800">15.026</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="15646656800">15.646</td>
+              <td class="duration" data-value="15646656800">15.646</td>
+              <td class="duration" data-value="15646656800">15.646</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_the_edit_user_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14520481500">14.520</td>
+              <td class="duration" data-value="14520481500">14.520</td>
+              <td class="duration" data-value="14520481500">14.520</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_the_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="15442775500">15.442</td>
+              <td class="duration" data-value="15442775500">15.442</td>
+              <td class="duration" data-value="15442775500">15.442</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_the_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="15567372100">15.567</td>
+              <td class="duration" data-value="15567372100">15.567</td>
+              <td class="duration" data-value="15567372100">15.567</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_the_users_list_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="14780658000">14.780</td>
+              <td class="duration" data-value="14780658000">14.780</td>
+              <td class="duration" data-value="14780658000">14.780</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigates_to_users_list_page()</td>
+              <td>2</td>
+              <td class="duration" data-value="14983097000">14.983</td>
+              <td class="duration" data-value="14983097000">15.111</td>
+              <td class="duration" data-value="29966194000">29.966</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigating_To_Home_Page()</td>
+              <td>1</td>
+              <td class="duration" data-value="25555461400">25.555</td>
+              <td class="duration" data-value="25555461400">25.555</td>
+              <td class="duration" data-value="25555461400">25.555</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigating_to_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="27021886100">27.021</td>
+              <td class="duration" data-value="27021886100">27.021</td>
+              <td class="duration" data-value="27021886100">27.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigating_to_the_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="24429354700">24.429</td>
+              <td class="duration" data-value="24429354700">24.429</td>
+              <td class="duration" data-value="24429354700">24.429</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.navigating_to_the_homepage()</td>
+              <td>1</td>
+              <td class="duration" data-value="25171277000">25.171</td>
+              <td class="duration" data-value="25171277000">25.171</td>
+              <td class="duration" data-value="25171277000">25.171</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.open_the_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="7678762100">7.678</td>
+              <td class="duration" data-value="7678762100">7.678</td>
+              <td class="duration" data-value="7678762100">7.678</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.open_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="10522677200">10.522</td>
+              <td class="duration" data-value="10522677200">10.522</td>
+              <td class="duration" data-value="10522677200">10.522</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.opening_The_Browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8961761600">8.961</td>
+              <td class="duration" data-value="8961761600">8.961</td>
+              <td class="duration" data-value="8961761600">8.961</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.opening_the_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8169405600">8.169</td>
+              <td class="duration" data-value="8169405600">8.169</td>
+              <td class="duration" data-value="8169405600">8.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.opening_the_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="9224694400">9.224</td>
+              <td class="duration" data-value="9224694400">9.224</td>
+              <td class="duration" data-value="9224694400">9.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.opens_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="12897659900">12.897</td>
+              <td class="duration" data-value="12897659900">12.897</td>
+              <td class="duration" data-value="12897659900">12.897</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_invokes_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8980467200">8.980</td>
+              <td class="duration" data-value="8980467200">8.980</td>
+              <td class="duration" data-value="8980467200">8.980</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_invokes_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8393124700">8.393</td>
+              <td class="duration" data-value="8393124700">8.393</td>
+              <td class="duration" data-value="8393124700">8.393</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_logs_into_the_users_list_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14222449400">14.222</td>
+              <td class="duration" data-value="14222449400">14.222</td>
+              <td class="duration" data-value="14222449400">14.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_navigates_to_the_user_list_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14793673500">14.793</td>
+              <td class="duration" data-value="14793673500">14.793</td>
+              <td class="duration" data-value="14793673500">14.793</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_navigates_to_the_users_list_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14902685800">14.902</td>
+              <td class="duration" data-value="14902685800">14.902</td>
+              <td class="duration" data-value="14902685800">14.902</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_navigates_to_the_users_list_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="14404946400">14.404</td>
+              <td class="duration" data-value="14404946400">14.404</td>
+              <td class="duration" data-value="14404946400">14.404</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_user_navigates_to_users_list_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14509492600">14.509</td>
+              <td class="duration" data-value="14509492600">14.509</td>
+              <td class="duration" data-value="14509492600">14.509</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.the_users_logs_in_to_the_users_list_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14543058200">14.543</td>
+              <td class="duration" data-value="14543058200">14.543</td>
+              <td class="duration" data-value="14543058200">14.543</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_invokes_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8691721500">8.691</td>
+              <td class="duration" data-value="8691721500">8.691</td>
+              <td class="duration" data-value="8691721500">8.691</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_invokes_webbrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8800673200">8.800</td>
+              <td class="duration" data-value="8800673200">8.800</td>
+              <td class="duration" data-value="8800673200">8.800</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_loads_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="8530896000">8.530</td>
+              <td class="duration" data-value="8530896000">8.530</td>
+              <td class="duration" data-value="8530896000">8.530</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_loads_the_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="17207209800">17.207</td>
+              <td class="duration" data-value="17207209800">17.207</td>
+              <td class="duration" data-value="17207209800">17.207</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_loads_web_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="10981142900">10.981</td>
+              <td class="duration" data-value="10981142900">10.981</td>
+              <td class="duration" data-value="10981142900">10.981</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_navigates_to_the_edit_user_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14547772900">14.547</td>
+              <td class="duration" data-value="14547772900">14.547</td>
+              <td class="duration" data-value="14547772900">14.547</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.user_navigates_to_the_users_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="14391753600">14.391</td>
+              <td class="duration" data-value="14391753600">14.391</td>
+              <td class="duration" data-value="14391753600">14.391</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_If_A_Duplicate_User_Can_Be_Created()</td>
+              <td>1</td>
+              <td class="duration" data-value="17972269800">17.972</td>
+              <td class="duration" data-value="17972269800">17.972</td>
+              <td class="duration" data-value="17972269800">17.972</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_User_Can_Be_Created_After_Providing_All_Data()</td>
+              <td>1</td>
+              <td class="duration" data-value="45006332700">45.006</td>
+              <td class="duration" data-value="45006332700">45.006</td>
+              <td class="duration" data-value="45006332700">45.006</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_User_Can_Be_Created_Without_Credentials()</td>
+              <td>1</td>
+              <td class="duration" data-value="129920700">0.129</td>
+              <td class="duration" data-value="129920700">0.129</td>
+              <td class="duration" data-value="129920700">0.129</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_Whether_New_User_Can_Be_Created_Without_Giving_The_Username()</td>
+              <td>1</td>
+              <td class="duration" data-value="17468475500">17.468</td>
+              <td class="duration" data-value="17468475500">17.468</td>
+              <td class="duration" data-value="17468475500">17.468</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_if_a_deleted_entry_is_still_available()</td>
+              <td>1</td>
+              <td class="duration" data-value="6031754300">6.031</td>
+              <td class="duration" data-value="6031754300">6.031</td>
+              <td class="duration" data-value="6031754300">6.031</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_a_confirmation_window_comes_upon_clicking_the_delete_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="61913936700">1:1.913</td>
+              <td class="duration" data-value="61913936700">1:1.913</td>
+              <td class="duration" data-value="61913936700">1:1.913</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_an_edited_entry_is_saved_successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="68317019200">1:8.317</td>
+              <td class="duration" data-value="68317019200">1:8.317</td>
+              <td class="duration" data-value="68317019200">1:8.317</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_an_entry_can_be_deleted()</td>
+              <td>1</td>
+              <td class="duration" data-value="22423823000">22.423</td>
+              <td class="duration" data-value="22423823000">22.423</td>
+              <td class="duration" data-value="22423823000">22.423</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_an_existing_user_data_can_be_edited()</td>
+              <td>1</td>
+              <td class="duration" data-value="67380395500">1:7.380</td>
+              <td class="duration" data-value="67380395500">1:7.380</td>
+              <td class="duration" data-value="67380395500">1:7.380</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_create_user_button_is_enabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="344785800">0.344</td>
+              <td class="duration" data-value="344785800">0.344</td>
+              <td class="duration" data-value="344785800">0.344</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_department_dropdown_is_working_and_a_department_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="11918635600">11.918</td>
+              <td class="duration" data-value="11918635600">11.918</td>
+              <td class="duration" data-value="11918635600">11.918</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_language_dropdown_is_working_and_a_language_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="11904406400">11.904</td>
+              <td class="duration" data-value="11904406400">11.904</td>
+              <td class="duration" data-value="11904406400">11.904</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_level_dropdown_is_working_and_a_level_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="7718475700">7.718</td>
+              <td class="duration" data-value="7718475700">7.718</td>
+              <td class="duration" data-value="7718475700">7.718</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_level_is_deselected_when_role_is_removed()</td>
+              <td>1</td>
+              <td class="duration" data-value="14827085200">14.827</td>
+              <td class="duration" data-value="14827085200">14.827</td>
+              <td class="duration" data-value="14827085200">14.827</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_location_dropdown_is_working_and_a_location_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="7855827500">7.855</td>
+              <td class="duration" data-value="7855827500">7.855</td>
+              <td class="duration" data-value="7855827500">7.855</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_new_user_can_be_created_without_giving_the_email()</td>
+              <td>1</td>
+              <td class="duration" data-value="17495050100">17.495</td>
+              <td class="duration" data-value="17495050100">17.495</td>
+              <td class="duration" data-value="17495050100">17.495</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_new_user_can_be_created_without_giving_the_level()</td>
+              <td>1</td>
+              <td class="duration" data-value="43914384000">43.914</td>
+              <td class="duration" data-value="43914384000">43.914</td>
+              <td class="duration" data-value="43914384000">43.914</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_new_user_can_be_created_without_giving_the_name()</td>
+              <td>1</td>
+              <td class="duration" data-value="17770427800">17.770</td>
+              <td class="duration" data-value="17770427800">17.770</td>
+              <td class="duration" data-value="17770427800">17.770</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_new_user_can_be_created_without_giving_the_phone_number()</td>
+              <td>1</td>
+              <td class="duration" data-value="18031940600">18.031</td>
+              <td class="duration" data-value="18031940600">18.031</td>
+              <td class="duration" data-value="18031940600">18.031</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_new_user_can_be_created_without_giving_the_role()</td>
+              <td>1</td>
+              <td class="duration" data-value="19127544400">19.127</td>
+              <td class="duration" data-value="19127544400">19.127</td>
+              <td class="duration" data-value="19127544400">19.127</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_new_user_can_be_created_without_giving_the_title()</td>
+              <td>1</td>
+              <td class="duration" data-value="17955970700">17.955</td>
+              <td class="duration" data-value="17955970700">17.955</td>
+              <td class="duration" data-value="17955970700">17.955</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_role_dropdown_is_working_and_a_role_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="8071345400">8.071</td>
+              <td class="duration" data-value="8071345400">8.071</td>
+              <td class="duration" data-value="8071345400">8.071</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_status_dropdown_is_working_and_a_status_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="7589213700">7.589</td>
+              <td class="duration" data-value="7589213700">7.589</td>
+              <td class="duration" data-value="7589213700">7.589</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_the_department_dropdown_is_active_and_a_department_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="584147700">0.584</td>
+              <td class="duration" data-value="584147700">0.584</td>
+              <td class="duration" data-value="584147700">0.584</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_the_email_format_is_valid()</td>
+              <td>1</td>
+              <td class="duration" data-value="17324528100">17.324</td>
+              <td class="duration" data-value="17324528100">17.324</td>
+              <td class="duration" data-value="17324528100">17.324</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_the_location_dropdown_is_active_and_a_location_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="416756000">0.416</td>
+              <td class="duration" data-value="416756000">0.416</td>
+              <td class="duration" data-value="416756000">0.416</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_the_status_dropdown_is_active_and_a_status_can_be_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="412743800">0.412</td>
+              <td class="duration" data-value="412743800">0.412</td>
+              <td class="duration" data-value="412743800">0.412</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_the_uploaded_image_can_be_previewed()</td>
+              <td>1</td>
+              <td class="duration" data-value="18310016200">18.310</td>
+              <td class="duration" data-value="18310016200">18.310</td>
+              <td class="duration" data-value="18310016200">18.310</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_uploaded_image_format_is_invalid()</td>
+              <td>1</td>
+              <td class="duration" data-value="12722499100">12.722</td>
+              <td class="duration" data-value="12722499100">12.722</td>
+              <td class="duration" data-value="12722499100">12.722</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.verify_whether_users_button_is_enabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="10246739600">10.246</td>
+              <td class="duration" data-value="10246739600">10.246</td>
+              <td class="duration" data-value="10246739600">10.246</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.web_browser_is_loaded()</td>
+              <td>1</td>
+              <td class="duration" data-value="9046634800">9.046</td>
+              <td class="duration" data-value="9046634800">9.046</td>
+              <td class="duration" data-value="9046634800">9.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">pearl.SmartER.StepDefinition.UsersStepDefinition.web_browser_is_loaded_by_the_user()</td>
+              <td>1</td>
+              <td class="duration" data-value="9507331200">9.507</td>
+              <td class="duration" data-value="9507331200">9.507</td>
+              <td class="duration" data-value="9507331200">9.507</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>179</td>
+            <td>180</td>
+            <td class="duration">26.939</td>
+            <td class="duration">21:6.996</td>
+            <td class="duration">1:20:49.149</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

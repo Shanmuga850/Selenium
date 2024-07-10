@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MakerSuite" allow-return-values="true" parallel="none">
+
+<!-- Test Case 1. Seller MAKER Create Import LC with dependencies -->
+
+ <test name="Validation User Login" enabled="true">
+
+  <classes>
+
+    <class name="cucumberoptions.LoginRunner"/>
+
+  </classes>
+
+ </test>
+ 
+  <test name="Verify whether Search functionality is working correctly" enabled="true">
+
+  <classes>
+
+    <class name="cucumberoptions.SearchRunner"/>
+
+  </classes>
+
+ </test>
+ 
+ 
+   <test name="Verify whether a new user can be created " enabled="true">
+
+  <classes>
+
+    <class name="cucumberoptions.CreateNewUserRunner"/>
+
+  </classes>
+
+ </test>
+ 
+ 
+   <test name="Verify whether editing is possible for exising user records " enabled="true">
+
+  <classes>
+
+    <class name="cucumberoptions.EditUserRunner"/>
+
+  </classes>
+
+ </test>
+ 
+   <test name="Verify whether any alerts are there " enabled="true">
+
+  <classes>
+
+    <class name="cucumberoptions.IssuesRunner"/>
+
+  </classes>
+
+ </test>
+
+
+   <test name="Verify whether a new department can be created " enabled="true">
+
+  <classes>
+
+    <class name="cucumberoptions.DepartmentRunner"/>
+
+  </classes>
+
+ </test>
+</suite>
