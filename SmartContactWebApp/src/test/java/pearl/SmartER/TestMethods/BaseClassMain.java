@@ -147,7 +147,7 @@ public class BaseClassMain extends ExcelUtil {
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("hostname","localhost");
 		extent.setSystemInfo("os","windows10");
-		extent.setSystemInfo("testername","Dhanesh");
+		extent.setSystemInfo("testername","Shanmugavel");
 		extent.setSystemInfo("browsername","chrome");
 
 
